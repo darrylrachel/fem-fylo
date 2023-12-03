@@ -60,8 +60,13 @@ table {
 body {
   font-size: 16px;
 }
+body .template {
+  border: 1px dashed pink;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
 body .wrapper {
-  border: 1px dashed aqua;
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
@@ -80,7 +85,7 @@ body .wrapper .header .header__navbar ul {
 }
 body .wrapper .header .header__navbar ul li {
   font-family: "Raleway", sans-serif;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 body .wrapper .header .header__navbar ul li:last-child {
   padding-right: 0;
@@ -153,4 +158,83 @@ body .wrapper .hero .hero__body .hero__img img {
   background-size: contain;
   height: 450px;
   width: 560px;
+}
+body .productive {
+  background: url(/app/images/bg-curve-desktop.svg) center center no-repeat;
+  background-size: cover;
+}
+body .productive .productive__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 100px 0 100px 80px;
+  height: 700px;
+}
+body .productive .productive__wrapper .productive__text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50%;
+}
+body .productive .productive__wrapper .productive__text .title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: hsl(243, 87%, 12%);
+  letter-spacing: 0;
+  line-height: 50px;
+  font-size: 40px;
+}
+body .productive .productive__wrapper .productive__text .h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: hsl(243, 87%, 12%);
+  line-height: 24px;
+  margin-top: 14px;
+  padding: 0 120px 0 0;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+body .productive .productive__wrapper .productive__text .works-link {
+  margin-top: 20px;
+  border-bottom: 2px solid hsl(170, 45%, 43%);
+  width: 28%;
+}
+body .productive .productive__wrapper .productive__text .works-link a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(170, 45%, 43%);
+  letter-spacing: 0;
+}
+body .productive .productive__wrapper .productive__text .works-link img {
+  width: 16px;
+  height: 16px;
+}
+body .productive .productive__wrapper .productive__text .productive__text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  width: 356px;
+  height: 215px;
+  margin-top: 60px;
+}
+body .productive .productive__wrapper .productive__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  width: 50%;
+}
+body .productive .productive__wrapper .productive__img img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 465px;
+  width: 576px;
 }/*# sourceMappingURL=main.css.map */
