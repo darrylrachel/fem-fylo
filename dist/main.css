@@ -91,7 +91,7 @@ body .wrapper .header .header__navbar ul li:last-child {
   padding-right: 0;
 }
 body .wrapper .hero {
-  padding: 85px 0;
+  padding: 0 0 85px 0;
 }
 body .wrapper .hero .hero__body {
   display: flex;
@@ -170,9 +170,9 @@ body .productive .productive__wrapper {
   justify-content: space-between;
   max-width: 1280px;
   width: 100%;
-  margin: 60px auto;
-  padding: 100px 0 100px 80px;
-  height: 700px;
+  margin: 60px auto 0 auto;
+  padding: 260px 0 260px 80px;
+  height: 780px;
 }
 body .productive .productive__wrapper .productive__text {
   display: flex;
@@ -216,12 +216,52 @@ body .productive .productive__wrapper .productive__text .works-link img {
 body .productive .productive__wrapper .productive__text .productive__text-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: #fff;
-  width: 356px;
-  height: 215px;
+  width: 386px;
+  height: 260px;
   margin-top: 60px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body {
+  display: flex;
+  flex-direction: column;
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body .h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  padding: 0;
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body .user .user__info {
+  margin: 0 0 0 15px;
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body .user .user__info p {
+  font-size: 14px;
+  letter-spacing: 0.55px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: hsl(243, 87%, 12%);
+}
+body .productive .productive__wrapper .productive__text .productive__text-card .productive__text--card-body .user .user__info .small {
+  font-size: 11px;
+  color: hsl(238, 22%, 44%);
+  letter-spacing: 0.4px;
+  line-height: 15px;
 }
 body .productive .productive__wrapper .productive__img {
   display: flex;
@@ -237,4 +277,125 @@ body .productive .productive__wrapper .productive__img img {
   background-size: contain;
   height: 465px;
   width: 576px;
+}
+body .access-cta {
+  background: hsl(238, 22%, 44%);
+  width: 100%;
+  height: 355px;
+  padding: 120px 0 0 0;
+}
+body .access-cta .wrapper {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .access-cta .wrapper .access-cta__desc {
+  color: #fff;
+  width: 50%;
+  padding: 0 100px 0 0;
+}
+body .access-cta .wrapper .access-cta__desc .title {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 48px;
+}
+body .access-cta .wrapper .access-cta__desc .h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+body .access-cta .wrapper .access-cta__form {
+  width: 50%;
+  padding: 0 80px;
+}
+body .access-cta .wrapper .access-cta__form .access-cta__form-input {
+  border-radius: 3.12px;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 0;
+}
+body .access-cta .wrapper .access-cta__form .access-cta__form-input input.form-control {
+  padding: 15px 10px;
+}
+body .access-cta .wrapper .access-cta__form .access-cta__form-input ::-moz-placeholder {
+  color: #c8c8c8;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 10px;
+}
+body .access-cta .wrapper .access-cta__form .access-cta__form-input ::placeholder {
+  color: #c8c8c8;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 10px;
+}
+body .access-cta .wrapper .access-cta__form .access-cta__form-btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 30px;
+  margin-top: 20px;
+  background: hsl(224, 93%, 58%);
+  box-shadow: 2px 3px 6px 0 rgba(7, 4, 59, 0.16);
+  border-radius: 3.12px;
+}
+body .footer {
+  background: hsl(243, 87%, 12%);
+  height: 400px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-bottom: 60px;
+}
+body .footer .wrapper {
+  padding-top: 100px;
+}
+body .footer .wrapper .footer__info {
+  display: flex;
+  flex-direction: column;
+}
+body .footer .wrapper .footer__info .footer__logo {
+  margin-bottom: 30px;
+}
+body .footer .wrapper .footer__info .footer__info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+body .footer .wrapper .footer__info .footer__info-wrapper .footer__info-contact {
+  align-items: start;
+}
+body .footer .wrapper .footer__info .footer__info-wrapper .footer__info-contact p {
+  padding: 10px 0;
+}
+body .footer .wrapper .footer__info .footer__info-wrapper .footer__info-contact p span {
+  margin-right: 10px;
+}
+body .footer .wrapper .footer__info .footer__info-wrapper .footer__info-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .footer .wrapper .footer__info .footer__info-wrapper .footer__info-links ul .links {
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+body .footer .wrapper .footer__info .footer__info-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .footer .wrapper .footer__info .footer__info-social span {
+  margin-right: 10px;
+}
+body .footer .wrapper .footer__info .footer__info-social span:last-child {
+  margin-right: 0;
 }/*# sourceMappingURL=main.css.map */

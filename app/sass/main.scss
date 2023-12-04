@@ -48,7 +48,7 @@ body {
 		}
 
 		.hero {
-			padding: 85px 0;
+			padding: 0 0 85px 0;
 
 			.hero__body {
 				display: flex;
@@ -143,9 +143,9 @@ body {
 				justify-content: space-between;
 				max-width: 1280px;
 				width: 100%;
-				margin: 60px auto;
-				padding: 100px 0 100px 80px;
-				height: 700px;
+				margin: 60px auto 0 auto;
+				padding: 260px 0 260px 80px;
+				height: 780px;
 
 				.productive__text {
 					display: flex;
@@ -192,12 +192,61 @@ body {
 					.productive__text-card {
 						display: flex;
 						flex-direction: column;
-						align-items: center;
-						justify-content: space-around;
+						justify-content: space-evenly;
 						background: #fff;
-						width: 356px;
-						height: 215px;
+						width: 386px;
+						height: 260px;
 						margin-top: 60px;
+						padding: 20px;
+						border-radius: 4px;
+						box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.16);
+						-webkit-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.16);
+
+						.productive__text--card-body {
+							display: flex;
+							flex-direction: column;
+							// align-items: center;
+							// justify-content: center;
+
+							.h6 {
+								font-family: $O-Sans;
+								font-size: 16px;
+								text-align: left;
+								padding: 0;
+							}
+
+							.user {
+								display: flex;
+								flex-direction: row;
+								align-items: center;
+								margin-top: 15px;
+
+								img {
+									width: 50px;
+									height: 50px;
+									border-radius: 50px;
+								}
+								.user__info {
+									margin: 0 0 0 15px;
+
+									p {
+									font-size: 14px;
+									letter-spacing: 0.55px;
+									font-family: $Raleway;
+									font-weight: 700;
+									color: $dark-blue;
+
+								}
+									.small {
+										font-size: 11px;
+										color: $desat-blue;
+										letter-spacing: 0.4px;
+										line-height: 15px;
+									}
+								}
+							}
+						}
+
 
 					}
 				}
@@ -219,8 +268,150 @@ body {
 					}
 				}
 			}
+	} // END Productivity wrapper
+
+	.access-cta {
+		background: $desat-blue;
+		width: 100%;
+		height: 355px;
+		padding: 120px 0 0 0;
+
+		.wrapper {
+			margin: 0 auto;
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+
+			.access-cta__desc {
+				color: #fff;
+				width: 50%;
+				// border: 1px solid orange;
+				padding: 0 100px 0 0;
+
+				.title {
+					font-family: $Raleway;
+					font-size: 32px;
+					letter-spacing: 0;
+					font-weight: 700;
+					line-height: 48px;
+				}
+
+				.h6 {
+					font-family: $O-Sans;
+					font-size: 16px;
+					color: #FFFFFF;
+					letter-spacing: 0.5px;
+					line-height: 24px;
+				}
+			}
+
+			.access-cta__form {
+				// border: 1px solid red;
+				width: 50%;
+				padding: 0 80px;
+
+				.access-cta__form-input {
+					// background: #FFFFFF;
+					// box-shadow: 2px 3px 6px 0 rgba(7,4,59,0.16);
+					border-radius: 3.12px;
+					font-size: 12px;
+					letter-spacing: 0;
+					padding: 0;
+
+					input.form-control {
+						padding: 15px 10px;
+					}
+
+					::placeholder {
+						color: #c8c8c8;
+						font-size: 14px;
+						font-family: $O-Sans;
+						padding: 15px 10px;
+					}
+				}
+
+				.access-cta__form-btn {
+					font-family: $O-Sans;
+					padding: 10px 30px;
+					margin-top: 20px;
+					// background: #2F65F8;
+					background: $bright-blue;
+					box-shadow: 2px 3px 6px 0 rgba(7,4,59,0.16);
+					border-radius: 3.12px;
+				}
 
 
+			}
+		}
+	} // END Access CTA
 
+	.footer {
+		background: $dark-blue;
+		height: 400px;
+		margin: 0 auto;
+		font-family: $O-Sans;
+		font-size: 14px;
+		padding-bottom: 60px;
+
+		.wrapper {
+			padding-top: 100px;
+
+			.footer__info {
+				display: flex;
+				flex-direction: column;
+
+				.footer__logo {
+					margin-bottom: 30px;
+				}
+
+				.footer__info-wrapper {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					color: #fff;
+
+					.footer__info-contact {
+						align-items: start;
+						// padding: 20px 0;
+						p {
+							padding: 10px 0;
+
+							span {
+								margin-right: 10px;
+							}
+						}
+					}
+					.footer__info-links {
+						// height: 100px;
+						ul {
+							display: flex;
+							flex-direction: column;
+							justify-content: space-between;
+							.links {
+								padding-top: 15px;
+								padding-bottom: 8px;
+							}
+						}
+					}
+				}
+				.footer__info-social {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+
+					span {
+						margin-right: 10px;
+
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 }

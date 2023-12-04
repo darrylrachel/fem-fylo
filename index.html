@@ -11,7 +11,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 
-		<title>Frontend Mentor | Fylo landing page with two column layout</title>
+		<title>Fylo Collaboration</title>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -20,16 +20,6 @@
 		/>
 		<link rel="stylesheet" href="/app/font5/all.css" />
 		<link rel="stylesheet" href="/dist/main.css" />
-
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -101,7 +91,7 @@
 					</p>
 
 					<div class="productive__text-card">
-						<span> icon </span>
+						<span><img src="/app/images/icon-quotes.svg" alt="" /></span>
 						<div class="productive__text--card-body">
 							<p class="h6">
 								Fylo has improved our team productivity by an order of
@@ -109,9 +99,14 @@
 								will-oiled collaboration machine.
 							</p>
 							<div class="user">
-								<img src="" alt="" />
-								<p>Kyle Burton</p>
-								<p class="small">Founder &amp; CEO, Huddle</p>
+								<img
+									src="https://randomuser.me/api/portraits/men/62.jpg"
+									alt=""
+								/>
+								<div class="user__info">
+									<p>Kyle Burton</p>
+									<p class="small">Founder &amp; CEO, Huddle</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -122,23 +117,74 @@
 			</div>
 		</section>
 
-		<!--
-		 Fylo has improved our team productivity by an order of
-		magnitude. Since making the switch our team has become a well-oiled
-		collaboration machine. Kyle Burton Founder & CEO, Huddle Get early access
-		today It only takes a minute to sign up and our free starter tier is
-		extremely generous. If you have any questions, our support team would be
-		happy to help you. Get Started For Free Phone: +1-543-123-4567
-		example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy -->
+		<section class="access-cta">
+			<div class="wrapper">
+				<div class="access-cta__desc">
+					<p class="title">Get early access today</p>
+					<p class="h6">
+						It only takes a mintue tosign up and out free starter tier is
+						extremely generous. If you have any questions, our supprt team would
+						be happy to help you.
+					</p>
+				</div>
+				<div class="access-cta__form">
+					<div class="access-cta__form-input input-group">
+						<input
+							type="email"
+							class="form-control"
+							placeholder="email@example.com"
+							aria-label="email"
+							aria-describedby=""
+						/>
+					</div>
+					<div class="access-cta__form-btn btn btn-primary">
+						Get Started For Free
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<footer>
-			<p class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer>
+		<section class="footer">
+			<div class="wrapper">
+				<div class="footer__info">
+					<div class="footer__logo">
+						<img src="/app/images/logo-wht.png" alt="" />
+					</div>
+					<div class="footer__info-wrapper">
+						<div class="footer__info-contact">
+							<p>
+								<span><img src="/app/images/icon-phone.svg" alt="" /></span>
+								Phone: +1-543-123-4567
+							</p>
+							<p>
+								<span><img src="/app/images/icon-email.svg" alt="" /></span>
+								example@fylo.com
+							</p>
+						</div>
+						<div class="footer__info-links">
+							<ul>
+								<li class="links">About Us</li>
+								<li class="links">Jobs</li>
+								<li class="links">Press</li>
+								<li class="links">Blog</li>
+							</ul>
+						</div>
+						<div class="footer__info-links">
+							<ul>
+								<li class="links">Contact Us</li>
+								<li class="links">Terms</li>
+								<li class="links">Privacy</li>
+							</ul>
+						</div>
+						<div class="footer__info-social">
+							<span><img src="app/images/facebook.png" alt="" /></span>
+							<span><img src="app/images/twitter.png" alt="" /></span>
+							<span><img src="app/images/insta.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
