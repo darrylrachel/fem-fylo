@@ -474,10 +474,10 @@ table {
   }
   body .wrapper .hero .hero__body .hero__form .hero__form-input {
     width: 75%;
-    margin-right: 20px;
+    margin-right: 30px;
   }
   body .wrapper .hero .hero__body .hero__form .hero__form-btn {
-    width: 45%;
+    width: 35%;
     margin-top: 0;
     color: #fff;
     border-radius: 4px;
